@@ -40,4 +40,27 @@ The API that was used for deployment in this assignment is Flask. It provides an
 user inputs any of the test MNIST image and returns the predicted label of it. 
 
 This deployment service is built using Docker as well so that any user can carry the MNIST classifying software
-into a container and use it on his machine.
+into a container and use it on his machine. Prior to running the commands below, make sure they are ran within
+the directory in which the Dockerfile is located in.
+### Docker
+#### Run Dockerfile:
+```python
+docker build -f Dockerfile -t pytorch/pytorch:2.3.1-cuda11.8-cudnn8-runtime .
+```
+#### Build docker image:
+```python
+docker build -t (image name) .
+	Ex: docker build -t mediwhale_task .
+```
+#### Build docker container with the image created above:
+```python
+docker run --name (container name) --gpus all -it (image name)
+	Ex: docker run --name mediwhale --gpus all -it mediwhale_task
+```
+
+Alternatively, the deployment can be executed using docker-compose by running docker-compose.yml file
+that runs every command on Dockerfile given the docker image and container names for which it was created.
+
+```python
+docker compose up -d --build
+```
