@@ -17,6 +17,11 @@ prompt in order to create an URI via which he can observe the logged in loss val
 ```python
 mlflow server --host 127.0.0.1 --port 8080
 ```
+### github repository cloning and conda environment creation
+```python
+git clone Assignment.git
+conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=11.8 -c pytorch -c nvidia
+```
 ### Install the required libraries:
 ```python
 pip install requirements.txt
