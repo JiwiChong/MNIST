@@ -13,10 +13,31 @@ to see whether they drop as the model gets trained and its parameters are tuned 
 to their corresponding labels. 
 
 Prior to execute the training phase of LeNet-5, the user must run the following command in command
-prompt in order to create an URI via which he can observe the logged in loss values.
-
-
-##Install the required libraries:
+prompt in order to create an URI via which he can observe the logged in loss values:
+```python
+mlflow server --host 127.0.0.1 --port 8080
+```
+### Install the required libraries:
 ```python
 pip install requirements.txt
 ```
+### Train:
+```python
+python main_mlflow.py --batch_size 32 --learning_rate 0.001 --model_name lenet5 --num_epochs 10 --data_name mnist --n_classes 10 --run_num (# of run (if first, input is 1))
+```
+### Test:
+```python
+python eval.py --batch_size 32 --model_name lenet5 --data_name mnist --n_classes 10 --run_num (# of run (if first, input is 1))
+```
+When tested, LeNet-5 achieved both **Accuracy** and **F1-Scores** of **99%**. 
+
+After the training phase is completed, LeNet-5's format is converted to ONNX. ONNX is a valuable tool
+that provides a common file format for users to change AI models from one framework to another, allowing
+users to configure and run them with other tools and compilers. Afterwards, the ONNX model is registered
+to MLFlow to be utilized for deployment.
+
+The API that was used for deployment in this assignment is Flask. It provides an interaction service in which a 
+user inputs any of the test MNIST image and returns the predicted label of it. 
+
+This deployment service is built using Docker as well so that any user can carry the MNIST classifying software
+into a container and use it on his machine.
