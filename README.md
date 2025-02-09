@@ -7,6 +7,10 @@ via an API for other users to interact with and test its functionality by inputt
 The algorithm of choice is LeNet-5, a simple yet an effective variant of Convolutional Neural
 Network, which automatically labels a given MNIST image with a digit label. 
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/bb1817ef-743d-4111-b2a8-8e63bf15cbca" width=90% height=90%>
+</div><br />
+
 LeNet-5 was built using PyTorch. Throughout the training phase, the training and validation loss
 values are logged in on MLFlow. At MLFlow, users can verify the progress of such loss values 
 to see whether they drop as the model gets trained and its parameters are tuned to fit the images
