@@ -1,4 +1,4 @@
-# MNIST
+# API Service with MNIST
 
 This assignment focuses on multiple tasks involving the MNIST dataset, which
 is comprised of images that are labeled with digits from 0 to 9. The tasks include, development and training of a
