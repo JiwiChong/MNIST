@@ -57,11 +57,15 @@ for deployment and the information about the tracked experiment entry is returne
 python eval.py --batch_size 32 --model_name lenet5 --data_name mnist --n_classes 10 --run_num (# of run (if first, input is 1))
 ```
 When tested, LeNet-5 achieved both **Accuracy** and **F1-Scores** of **99%**. 
-It achieved such near perfect scores when it was trained with the following hyperparameters:<br />
+It achieved such near perfect scores when it was trained with the 
+following hyperparameters:<br />
+
 **epochs = 10<br />
   learning rate = 0.001<br />
   batch size = 32<br />
-  Optimizer = Adam**<br />
+  Optimizer = Adam<br />
+  Loss Function = Cross Entropy**<br />
+  
 In addition, information about the registered model is saved in __"/registered_models/lenet5/run_(given run number)/"__
 
 The API that was used for deployment in this assignment is Flask. It provides an interaction service in which a 
