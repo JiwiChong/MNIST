@@ -4,6 +4,11 @@ This assignment focuses on the task of image classification using MNIST dataset,
 is comprised of images that are labeled with digits from 0 to 9. A deep learning algorithm
 will be used to undertake the classification task. Such algorithm will be deployed later on
 via an API for other users to interact with and test its functionality by inputting an image.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/928aca97-6b4a-4d98-aabd-d2d4f3967a65" width=100% height=100%>
+</div><br />
+
 The algorithm of choice is LeNet-5, a simple yet an effective variant of Convolutional Neural
 Network, which automatically labels a given MNIST image with a digit label. 
 
