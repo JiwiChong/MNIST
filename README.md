@@ -31,9 +31,8 @@ and information of the model:
 ```python
 mlflow server --host 127.0.0.1 --port 8080
 ```
-### github repository cloning and conda environment creation
+### conda environment creation
 ```python
-git clone Assignment.git
 conda create -n mediwhale_mnist python=3.8
 ```
 ### Install the required libraries:
