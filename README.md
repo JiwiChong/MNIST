@@ -123,4 +123,4 @@ machine, not the one for Docker. This is the directory in which the registered O
 </div><br />
 
 That's it! Feel free to test as many new test MNIST images as you would like! All you have to do is select any image file
-from your machine and click on the blue "Predict Image" button.
+from your machine and click on the blue "Predict Image" button. Test image files are in __"/dataset/MNIST/test_images/"__.
