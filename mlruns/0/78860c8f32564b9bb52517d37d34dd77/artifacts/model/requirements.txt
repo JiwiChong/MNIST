@@ -1,0 +1,6 @@
+mlflow==2.16.2
+numpy==1.26.4
+onnx==1.16.1
+onnxruntime-directml==1.18.0
+onnxruntime-gpu==1.18.0
+onnxruntime==1.18.0

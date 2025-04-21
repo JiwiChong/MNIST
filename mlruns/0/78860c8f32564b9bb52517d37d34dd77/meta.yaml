@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/jwkor/Documents/Careers/2025/MediWhale/Assignment/mlruns/0/78860c8f32564b9bb52517d37d34dd77/artifacts
+end_time: 1738741117429
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78860c8f32564b9bb52517d37d34dd77
+run_name: clumsy-dog-563
+run_uuid: 78860c8f32564b9bb52517d37d34dd77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738741112864
+status: 3
+tags: []
+user_id: jwkor
