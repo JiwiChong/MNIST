@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+    mediwhale_task2:
+        build: .
+        image: mediwhale_task2
+        container_name: mediwhale2
+        restart: always
+        ports:
+        - "9090:8080"
+
+      
+
